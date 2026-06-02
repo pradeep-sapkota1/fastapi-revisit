@@ -42,7 +42,7 @@ class Book(BaseModel):
     )
     
     isbn: str = Field(
-        regex= r'^\d{3}-\d{10}$',
+        pattern=  r'^\d{3}-\d{10}$',
         description="ISBN in format: 978-1234567890"
         
     )
@@ -161,7 +161,7 @@ class BookUpdate(BaseModel):
 class UserCreate(BaseModel):
     """Model for user registration"""
     username: str = Field(..., min_length=3, max_length=50)
-    email: str = Field(..., regex=r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+    email: str = Field(..., pattern =r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
     full_name: str = Field(..., min_length=2, max_length=100)
     age: Optional[int] = Field(None, ge=18, le=120)
     password: str = Field(..., min_length=8)
