@@ -3,7 +3,7 @@
 
 from fastapi import FastAPI
 
-#creating app object
+#creating app object (fast-api)
 app = FastAPI(
     title= "First API",
     description= "Learning FastAPI",
