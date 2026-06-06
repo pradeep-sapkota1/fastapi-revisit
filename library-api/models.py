@@ -22,7 +22,7 @@ class BookCondition(str, Enum):
     POOR = "poor"
     
 class Book(BaseModel):
-    #defination of book that our api must follow
+    #defination of book that our api must need follow 
     
     
     #required fields(no default value = required)
