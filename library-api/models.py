@@ -117,7 +117,7 @@ class Book(BaseModel):
         """Round price to 2 decimal places"""
         return round(value, 2)
     
-    # This tells Pydantic to show an example in docs
+    #This tells Pydantic to show an example in docs
     class Config:
         schema_extra = {
             "example": {
