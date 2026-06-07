@@ -7,7 +7,7 @@ Run: python test_models.py
 from models import Book, BookGenre, BookCondition, UserCreate
 from pydantic import ValidationError
 
-# Test 1: Valid Book
+# Test 1:Valid Book
 print("=" * 50)
 print("TEST 1: Creating a valid book")
 print("=" * 50)
